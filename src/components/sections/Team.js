@@ -45,7 +45,7 @@ const Testimonial = ({
 
   const sectionHeader = {
     title: 'Miembros',
-    paragraph: 'Conoce a queines conformamos IA@ESPOL'
+    paragraph: 'Conoce a queines conformamos AI@ESPOL'
   };
 
   return (
