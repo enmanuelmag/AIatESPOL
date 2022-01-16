@@ -9,6 +9,10 @@ import * as serviceWorker from './serviceWorker';
 //import './App.css';
 import './assets/scss/style.scss';
 
+window.__ = function (txt) {
+  return txt;
+}
+
 const history = createBrowserHistory();
 
 ReactDOM.render(

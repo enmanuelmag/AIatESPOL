@@ -8,6 +8,11 @@
 	.section-header {
 		padding-bottom: $features-split-header--padding__mobile;
 	}
+	.show-more-buttom {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @include media( '>medium' ) {

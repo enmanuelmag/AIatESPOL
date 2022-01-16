@@ -50,6 +50,10 @@
 		padding-bottom: $testimonial-item--inner-padding-v;
 		padding-left: $testimonial-item--inner-padding-h;
 		padding-right: $testimonial-item--inner-padding-h;
+
+		p {
+			color: color(high-contrast)
+		}
 	}
 }
 

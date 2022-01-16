@@ -3,6 +3,8 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+import Button from '../elements/Button';
+import ButtonGroup from '../elements/ButtonGroup';
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -50,8 +52,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: 'Workflow that just works',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: 'Proyectos en curso',
+    paragraph: 'Conoce la lista de proyectos en los que estamos trabajando.'
   };
 
   return (
@@ -142,6 +144,11 @@ const FeaturesSplit = ({
               </div>
             </div>
 
+          </div>
+          <div className="show-more-buttom" data-reveal-delay="600">
+            <Button tag="a" color="primary" wideMobile>
+              {('Ver más')}
+            </Button>
           </div>
         </div>
       </div>
