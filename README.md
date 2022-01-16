@@ -1,4 +1,4 @@
-## IA@ESPOL
+## AI@ESPOL
 
 ### Start web development
 
