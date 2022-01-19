@@ -61,7 +61,26 @@
 	max-width: $modal--max-width;
 	margin-left: $container--padding__mobile;
 	margin-right: $container--padding__mobile;
-	background: color-bg(modal);
+	background: color-bg(modal-bg);
+	color: color(modal-text);
+
+	.talk-title {
+		font-weight: bold;
+	}
+	.talk-info {
+		margin-top: 24px;
+		margin-bottom: 24px;
+		p {
+			font-size: 16px;
+			margin-bottom: 0px;
+			color: get-color(light, 4);
+		}
+	}
+	a.button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 .modal-content {

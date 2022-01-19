@@ -50,7 +50,8 @@ $color: (
 	base-inverse:			get-color(dark, 3),
 	high-contrast-inverse: 	get-color(light, 1),
 	mid-contrast-inverse: 	get-color(light, 2),
-	low-contrast-inverse: 	get-color(dark, 3)
+	low-contrast-inverse: 	get-color(dark, 3),
+	modal-text: get-color(dark, 3)
 );
 
 // Borders and dividers: color
@@ -84,5 +85,6 @@ $bg--color: (
 	shadow: 		0 24px 64px rgba(get-color(light, 1), .64),	// .has-shadow helper class
 	code: 			darken(get-color(light, 1), 3%),
 	code-inverse:	darken(get-color(light, 1), 3%),
-	check-checked-inverse:	darken(get-color(light, 1), 3%)
+	check-checked-inverse:	darken(get-color(light, 1), 3%),
+	modal-bg:		get-color(light, 1)
 );

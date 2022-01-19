@@ -55,6 +55,12 @@
 			color: color(high-contrast)
 		}
 	}
+
+	.show-more-buttom {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .testimonial-item-content {

@@ -29,6 +29,7 @@
 }
 
 .tiles-item {
+	cursor: pointer;
 	flex-basis: $tiles-item--width;
 	max-width: $tiles-item--width;
 	box-sizing: content-box;
