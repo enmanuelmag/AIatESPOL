@@ -75,7 +75,7 @@ const Testimonial = ({
                     <span className="text-color-low"> / </span>
                     <span className="testimonial-item-link">
                       <a href="#0">
-                        {'Fecha *DATE*'.replace('*DATE*', talk.date)}
+                        {'*DATE*'.replace('*DATE*', talk.date)}
                       </a>
                     </span>
                   </div>
