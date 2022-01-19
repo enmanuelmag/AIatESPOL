@@ -8,6 +8,6 @@ export default [
     link: "https://www.youtube.com/watch?v=X_Q-X_Q-X_Q",
     mode: "Online, Zoom",
     contact: "postgrados@fiec.espol.edu.ec",
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    description: 'Los modelos computacionales propuestos en la actualidad, para el entendimiento de imágenes y texto, contienen muchas propiedades similares en sus arquitecturas a pesar de la gran diferencia en la naturaleza de estas dos modalidades.  En esta charla, se presentará algunas de las coincidencias con respecto al uso de redes neuronales con múltiples capas con módulos de multi-headed self-attention: Transformers.'
   }
 ];
