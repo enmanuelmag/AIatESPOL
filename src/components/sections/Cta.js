@@ -45,6 +45,7 @@ const Cta = ({
   return (
     <section
       {...props}
+      id='contact'
       className={outerClasses}
     >
       <div className="container">
