@@ -63,7 +63,7 @@ const FeaturesSplit = ({
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={splitClasses}>
             {projects.map((project, index) => (
-              <div className="split-item">
+              <div key={`idx-${index}`} className="split-item">
                 <div
                   className="split-item-content center-content-mobile reveal-from-left"
                   data-reveal-container=".split-item"
@@ -72,7 +72,7 @@ const FeaturesSplit = ({
                     {project.type}
                   </div>
                   <h3 className="mt-0 mb-12">{project.title}</h3>
-                  <p className="m-0">{project.description}</p>
+                  <p style={{ fontSize: '18px' }} className="m-0">{project.description}</p>
                 </div>
                 <div
                   className={classNames(
@@ -82,7 +82,7 @@ const FeaturesSplit = ({
                   data-reveal-container=".split-item"
                 >
                   <Image
-                    src={require('./../../assets/images/features-split-image-01.png')}
+                    src={project.img}
                     alt="Features split 01"
                     width={528}
                     height={396}
