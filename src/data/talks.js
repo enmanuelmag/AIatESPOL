@@ -3,7 +3,7 @@ import moment from 'moment';
 export default [
   {
     speaker: "Dr. Vicente Ordoñez",
-    title: "Deep Learning para extraer patrones de imágenes y texto en conjunto",
+    title: "Deep Learning para extraer patrones de imágenes y texto en conjunto.",
     date: moment('2022-01-27T20:00:00-05:00').format('YYYY-MM-DD HH:mm'),
     link: "https://www.youtube.com/watch?v=X_Q-X_Q-X_Q",
     mode: "Online, Zoom",
