@@ -4,7 +4,7 @@ export async function sendEmail ({ email }) {
   let response;
   try {
     const payload = {
-      email: 'enmanuelmag@gmail.com', //'ia@espol.edu.ec',
+      email: 'ia@espol.edu.ec',
       subject: 'Request information about AI@ESPOL',
       message: `A person with email ${email} requested information about IA@ESPOL.`
     }
