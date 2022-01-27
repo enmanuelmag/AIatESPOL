@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-export default [
+const talks = [
   {
     speaker: "Dr. Vicente Ordoñez",
     title: "Deep Learning para extraer patrones de imágenes y texto en conjunto.",
@@ -11,3 +11,5 @@ export default [
     description: 'Los modelos computacionales propuestos en la actualidad, para el entendimiento de imágenes y texto, contienen muchas propiedades similares en sus arquitecturas a pesar de la gran diferencia en la naturaleza de estas dos modalidades.  En esta charla, se presentará algunas de las coincidencias con respecto al uso de redes neuronales con múltiples capas con módulos de multi-headed self-attention: Transformers.'
   }
 ];
+
+export default talks;
