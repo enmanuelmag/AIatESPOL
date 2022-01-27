@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
-import Button from '../elements/Button';
+//import Button from '../elements/Button';
 
 import projects from '../../data/projects';
 
