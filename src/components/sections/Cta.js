@@ -45,19 +45,25 @@ const Cta = ({
   );
 
   const [error, setError] = React.useState();
+  const [isLoading, setLoading] = React.useState();
   const [confModal, setConfModal] = React.useState();
 
   const onSubmit = (e) => {
     e.preventDefault();
     setError();
+    setLoading(true);
     const email = e.target.email.value;
     return sendEmail({ email })
       .then(() => {
         setConfModal(true);
+        setLoading(false);
       })
       .catch((err) => {
-        console.log(err)
-        setError('Estamos teniendo problemas al enviar el correo. Puedes contactarnos al correo ia@espol.edu.ec');
+        console.log(err);
+        setLoading(false);
+        setError(
+          'Estamos teniendo problemas al enviar el correo. Puedes contactarnos al correo ia@espol.edu.ec'
+        );
       });
   };
 
@@ -83,16 +89,31 @@ const Cta = ({
                   hasIcon="right"
                   placeholder={'Su correo'}
                 >
-                  <svg
-                    width="16"
-                    height="12"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z"
-                      fill="#ED5150"
-                    />
-                  </svg>
+                  {isLoading && (
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 38 38"
+                      xmlns="http://www.w3.org/2000/svg"
+                      stroke="#ed5150"
+                    >
+                      <g fill="none" fill-rule="evenodd">
+                        <g transform="translate(1 1)" stroke-width="2">
+                          <circle stroke-opacity=".5" cx="18" cy="18" r="18" />
+                          <path d="M36 18c0-9.94-8.06-18-18-18">
+                            <animateTransform
+                              attributeName="transform"
+                              type="rotate"
+                              from="0 18 18"
+                              to="360 18 18"
+                              dur="1s"
+                              repeatCount="indefinite"
+                            />
+                          </path>
+                        </g>
+                      </g>
+                    </svg>
+                  )}
                 </Input>
               </form>
             </div>
@@ -102,13 +123,10 @@ const Cta = ({
       <Modal
         id="talk-modal"
         show={confModal}
-        handleClose={() => setConfModal()}>
+        handleClose={() => setConfModal()}
+      >
         <div>
-          <p>{
-            error ?
-              error :
-              'Hemos recibido tu correo exitosamente'
-          }</p>
+          <p>{error ? error : 'Hemos recibido tu correo exitosamente'}</p>
         </div>
       </Modal>
     </>
