@@ -67,11 +67,16 @@
 	.talk-title {
 		font-weight: bold;
 	}
+	.talk-conf {
+		font-size: 16px;
+		margin-bottom: 0px;
+	}
 	.talk-info {
-		margin-top: 24px;
+		margin-top: 4px;
 		margin-bottom: 24px;
 		p {
-			font-size: 16px;
+			margin-left: 4px;
+			font-size: 14px;
 			margin-bottom: 0px;
 			color: get-color(light, 4);
 		}
@@ -80,6 +85,23 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+	.talk-details {
+		display: flex;
+		align-items: center;
+		div {
+			display: flex;
+			margin-right: 16px;
+			align-items: center;
+		}
+	}
+	img.icon {
+		color: get-color(light, 4);
+		//user filter to set color to #4D5B63
+		filter:	invert(1) hue-rotate(180deg) saturate(1.5) brightness(.45);
+		width: 1em;
+		height: 1em;
+		margin: 0;
 	}
 }
 

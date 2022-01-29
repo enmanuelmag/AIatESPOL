@@ -10,6 +10,8 @@ import LayoutDefault from './layouts/LayoutDefault';
 // Views 
 import Home from './views/Home';
 
+import './App.css';
+
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 

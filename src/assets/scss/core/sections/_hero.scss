@@ -1,5 +1,4 @@
 .hero {
-
 	.section-inner {
 		padding-top: $hero--padding-t__mobile;
 		padding-bottom: $hero--padding-b__mobile;
@@ -7,7 +6,7 @@
 }
 
 .hero-inner {
-
+	margin-top: 64px;
 	// Affects only hero full
 	> .hero-content + .hero-figure,
 	> .hero-figure + .hero-content {

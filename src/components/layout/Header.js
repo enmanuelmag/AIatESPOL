@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
 
 const propTypes = {
@@ -112,16 +111,16 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>{('Nosotros')}</Link>
+                      <a href="#home" onClick={closeMenu}>{('Nosotros')}</a>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>{("FAQ's")}</Link>
+                      <a href="#projects" onClick={closeMenu}>{("Proyectos")}</a>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>{('Proyectos')}</Link>
+                      <a href="#talks" onClick={closeMenu}>{('Charlas')}</a>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>{('Charlas')}</Link>
+                      <a href="#contact" onClick={closeMenu}>{('Contacto')}</a>
                     </li>
                   </ul>
                 </div>
