@@ -65,7 +65,7 @@ const Hero = ({
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                {('Somos un grupo de la facultad de ingeniería en computación de la Escuela Superior Politécnica del Litoral, dedicado a la investigacion y aplicación de técnicas de IA para la resolución de problemas de la sociedad')}
+                {('Somos un grupo de la Facultad de Ingeniería en Electricidad y Computación - FIEC, de la Escuela Superior Politécnica del Litoral - ESPOL, dedicado a la investigación y aplicación de técnicas de IA para la resolución de problemas de la sociedad')}
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
