@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
-//import Button from '../elements/Button';
+import Button from '../elements/Button';
 import Modal from '../elements/Modal';
 
 import DateIcon from '../../assets/icons/date.svg';
@@ -32,6 +32,7 @@ const Testimonial = ({
   ...props
 }) => {
   const [talksModal, setTalksModal] = useState();
+  const [videoModal, setVideoModal] = useState();
 
   const outerClasses = classNames(
     'testimonial section',
@@ -125,22 +126,47 @@ const Testimonial = ({
                 <div className="talk-description">
                   <p>{talksModal.description}</p>
                 </div>
-                {/* {moment().isAfter(talksModal.date) && (
+                {talksModal.link && (
                   <div className="link-meeting">
                     <Button
                       tag="a"
                       wideMobile
                       color="primary"
-                      href={talksModal.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      className='button-talk'
+                      onClick={() => setVideoModal(talksModal.link)}
+                      //href={talksModal.link}
+                      //target="_blank"
+                      //rel="noopener noreferrer"
                     >
                       {'Ver charla'}
                     </Button>
                   </div>
-                )} */}
+                )}
+                {talksModal.inscription && (
+                  <div className="link-meeting">
+                    <Button
+                      tag="a"
+                      wideMobile
+                      color="primary"
+                      className='button-talk'
+                      href={talksModal.inscription}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {'Inscribirse'}
+                    </Button>
+                  </div>
+                )}
               </div>
             </Modal>
+          )}
+          {videoModal && (
+            <Modal
+              id="video-modal"
+              show={!!videoModal}
+              handleClose={() => setVideoModal()}
+              video={videoModal}
+              videoTag="iframe" />
           )}
         </div>
       </div>

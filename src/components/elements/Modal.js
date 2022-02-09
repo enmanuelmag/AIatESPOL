@@ -65,7 +65,7 @@ const Modal = ({
     video && 'modal-video',
     className
   );
-
+  console.log('video', video);
   return (
     <>
       {show &&
